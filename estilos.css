@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/**** IMPORTANDO FUENTE DE GOOGLE FONTS ****/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+/**** VARIABLES DE COLORES SASS ****/
+/***** QUITANDO MARGENES A TODOS LOS ELEMENTOS DE LA PAGINA ******/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/**** PROPIEDADES DE LA CABECERA ****/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 3px 18px -4px rgba(0, 0, 0, 0.95);
+  -webkit-box-shadow: 0px 3px 18px -4px rgba(0, 0, 0, 0.95);
+  -moz-box-shadow: 0px 3px 18px -4px rgba(0, 0, 0, 0.95);
+  /**** ALINEAR LOS ITEMS UNO AL LADO DEL OTRO ****/
+}
+
+header .cabecera {
+  width: 100%;
+  max-width: 100%;
+  height: 8.41em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #7044C7;
+  color: #FFFFFF;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  /**** PROPIEDADES DEL LOGO Y TÍTULO ****/
+  /**** PROPIEDADES DE LAS CATEGORIAS ****/
+  /**** PROPIEDADES DE LA SECCIÓN DE BÚSQUEDA, CARRITO Y CUENTA ****/
+  /**** PROPIEDADES DE MENÚ HAMBURGUESA (DESAPARECE EN MODO ESCRITORIO) ****/
+  /**** OCULTANDO BARRA DE BÚSQUEDA EN MODO ESCRITORIO ****/
+}
+
+header .cabecera .logoPrincipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5em;
+}
+
+header .cabecera .logoPrincipal .logo {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header .cabecera .logoPrincipal h1 {
+  font-size: 2em;
+}
+
+header .cabecera .logoPrincipal h1 a {
+  color: #FFFFFF;
+}
+
+header .cabecera .menuNavegacion ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .cabecera .menuNavegacion ul li {
+  padding: .5em;
+  list-style: none;
+}
+
+header .cabecera .menuNavegacion ul li a {
+  color: #FFFFFF;
+  padding: .5em;
+}
+
+header .cabecera .menuNavegacion ul li a:hover {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+header .cabecera .opcionesT {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3em;
+}
+
+header .cabecera .opcionesT .lupa, header .cabecera .opcionesT .carrito {
+  cursor: pointer;
+}
+
+header .cabecera .opcionesT .lupa:hover, header .cabecera .opcionesT .carrito:hover {
+  color: #999999;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+header .cabecera .opcionesT .carrito {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+}
+
+header .cabecera .opcionesT .btnCuenta {
+  padding: .4em .8em;
+  color: #7044C7;
+  border-radius: 1em;
+  background-color: #FFFFFF;
+}
+
+header .cabecera .opcionesT .btnCuenta:hover {
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  color: #FFFFFF;
+  background-color: #7044C7;
+  border: 0.5px solid #FFFFFF;
+}
+
+header .cabecera .menu-toggle-btn {
+  cursor: pointer;
+  font-size: 2em;
+  line-height: 2em !important;
+  display: none;
+}
+
+header .cabecera .busqueda {
+  display: none;
+}
+
+header .cabecera .busqueda .inputBusqueda {
+  padding: .8em;
+  border-radius: .4em;
+  width: 70%;
+  max-width: 70%;
+}
+
+/**** PROPIEDADES DEL CUERPO DE LA PÁGINA ****/
+.cuerpo {
+  margin: auto;
+  padding: 1.5em 0;
+  width: 80%;
+}
+
+.cuerpo h2 {
+  scroll-margin-top: 11ex;
+}
+
+/******** PROPIEDADES DE LA PÁGINA EN MODO MOBILE (RESPONSIVE) ********/
+@media screen and (max-width: 1270px) {
+  /***** PROPIEDADES PARA RESPONSIVE - MEDIDAS DE COLUMNAS ******/
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-11 {
+    width: 91.6%;
+  }
+  .col-xs-10 {
+    width: 83.3%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-8 {
+    width: 66.6%;
+  }
+  .col-xs-7 {
+    width: 58.3%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-5 {
+    width: 41.6%;
+  }
+  .col-xs-4 {
+    width: 33.3%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-2 {
+    width: 16.6%;
+  }
+  .col-xs-1 {
+    width: 8.3%;
+  }
+  /**** PROPIEDADES DE LOS ITEMS QUE LLEVEN CLASE COL (CENTRAR LOS ÍCONOS EN MOBILE) ****/
+  [class*="col-"] {
+    margin-top: .5em;
+    float: left;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /**** PROPIEDADES DE LA CABECERA ****/
+  .cabecera {
+    text-align: center;
+    display: table !important;
+    /**** OCULTAR BOTÓN DE BÚSQUEDA Y DE CUENTA EN MODO MOBILE ****/
+    /**** PROPIEDADES DE CATEGORIAS (ALINEAMIENTO VERTICAL PARA MOBILE) ****/
+    /**** PROPIEDAD ENLAZADA CON JQUERY PARA MOSTRAR LAS CATEGORIAS AL CLICKEAR EN BOTÓN DE MENÚ ****/
+    /**** MOSTRANDO BARRA DE BÚSQUEDA EN MODO MOBILE ****/
+  }
+  .cabecera .menu-toggle-btn {
+    display: block !important;
+  }
+  .cabecera .logoPrincipal {
+    font-size: 2em;
+  }
+  .cabecera h1 {
+    display: none;
+  }
+  .cabecera .lupa, .cabecera .btnCuenta {
+    display: none !important;
+  }
+  .cabecera .carrito {
+    margin-top: .4em;
+    font-size: 1.8em;
+  }
+  .cabecera .menuNavegacion {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    height: max;
+    top: 8em;
+    background-color: #7044C7;
+    color: #FFFFFF;
+    right: 0;
+    display: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cabecera .menuNavegacion ul {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    display: block !important;
+    box-shadow: 0px 3px 18px -4px rgba(0, 0, 0, 0.95);
+    -webkit-box-shadow: 0px 3px 18px -4px rgba(0, 0, 0, 0.95);
+    -moz-box-shadow: 0px 3px 18px -4px rgba(0, 0, 0, 0.95);
+  }
+  .cabecera .menuNavegacion ul li {
+    border: 1px solid #FFFFFF;
+  }
+  .cabecera .menuNavegacion ul li a:active {
+    background-color: #FFFFFF;
+    color: #7044C7;
+  }
+  .cabecera .menuNavegacion i {
+    display: none !important;
+  }
+  .cabecera .menuNavegacion.active {
+    display: block !important;
+  }
+  .cabecera .busqueda {
+    display: block !important;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /**** REDIRIGIENDO HACIA LOS H2 AL SELECCIONAR UNA CATEGORIA ****/
+  .cuerpo h2 {
+    scroll-margin-top: 11ex;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

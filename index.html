@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/9c2657afd4.js" crossorigin="anonymous"></script>
+    <!-- POPUP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <title>TRAVELPER - CHUNGA ACOSTA, GIANCARLO</title>
+</head>
+<body>
+    
+    <header>
+
+        <div class="cabecera">
+
+            <!-- CREANDO BOTON DE MENU HAMBURGUESA -->
+            <i class="menu-toggle-btn fas fa-bars col-xs-4"></i>
+
+            <!-- LOGO PRINCIPAL CON EL TITULO DE TRAVELPER -->
+            <nav class="logoPrincipal col-xs-4">
+                <a href="#"><i class="fas fa-fighter-jet logo"></i></a>
+                <h1><a href="#">TRAVELPER</a></h1>
+            </nav>
+
+            <!-- MENÚ CON LAS CATEGORIAS ASIGNADAS -->
+            <nav class="menuNavegacion col-xs-12">
+                <ul>
+                    <li><a href="#vuelos">Vuelos</a><i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#paquetes">Paquetes</a><i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#alojamiento">Alojamiento</a><i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#actividades">Actividades</a><i class="fas fa-chevron-down"></i></li>
+                    <li><a href="#traslados">Traslados</a><i class="fas fa-chevron-down"></i></li>
+                </ul>
+            </nav>
+
+            <!-- CREANDO LOS BOTONES DE BÚSQUEDA, CARRITO Y CUENTA -->
+            <nav class="opcionesT col-xs-4">
+                <!-- LUPA -->
+                <i class="fas fa-search lupa"></i>
+                <!-- POPUP DE CARRITO DE COMPRAS -->
+                <div id="ex1" class="modal">
+                    <p>MI CARRITO DE COMPRAS</p>
+                    <a href="#" rel="modal:close"></a>
+                  </div>
+                  <p><a href="#ex1" rel="modal:open"><i class="fas fa-shopping-cart carrito"></i></a></p>
+                  <a class="btnCuenta" href="#PanelUsuario">Mi Cuenta</a>
+            </nav>
+
+
+            <!-- BARRA DE BÚSQUEDA SOLO EN RESPONSIVE (SE MANTIENE OCULTA) -->
+            <nav class="busqueda col-xs-12">
+                <input type="search" size="30" class="inputBusqueda" placeholder="Buscar">
+            </nav>    
+
+        </div>    
+        
+        
+
+    </header>
+
+
+            <!-- CUERPO DE LA PÁGINA (TEXTO ALEATORIO) -->
+    <section class="cuerpo">
+        
+        <h2 id="vuelos">Vuelos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut, placeat accusantium corrupti laboriosam, minus maiores neque cupiditate laudantium tenetur iusto beatae inventore provident nesciunt sint debitis id? Quisquam, laboriosam.
+        Quia maxime maiores sequi similique ea molestiae dolorum consectetur iure recusandae animi natus a culpa libero, nisi aut veritatis ex odit aperiam harum beatae sed neque facilis corrupti? Hic, vel.
+        Molestias nisi dignissimos reprehenderit modi et eos nobis neque ex? Dolores qui sapiente quasi libero a. Voluptate natus ex amet saepe est quibusdam maiores, obcaecati ipsum facilis dolorum deleniti? Vel.
+        Similique, totam quasi. Atque ipsam voluptatum ea tempora assumenda explicabo eius, optio voluptate possimus aperiam et, perspiciatis incidunt ex eaque corporis dolorum nobis fugiat eos! Dolorem cupiditate illo omnis veniam.
+        Molestias repudiandae aliquid, nam expedita alias cum nemo nihil maiores magnam, soluta iusto! Fugiat non libero eveniet expedita dignissimos nulla temporibus nesciunt nihil possimus placeat. Possimus obcaecati quam consectetur assumenda!
+        Officiis quaerat cupiditate, asperiores officia quas saepe ab dolor autem, rem aliquam aperiam natus! Expedita ea magni vitae. Recusandae, magni architecto! Sint consectetur praesentium quis, nesciunt voluptatibus recusandae id atque.
+        Esse, sequi iure perferendis accusamus ipsum eius dolores odit voluptates veniam vel assumenda dicta quas earum atque pariatur quos id, natus tempore sunt animi ullam. Beatae illum ut recusandae id?
+        Placeat nostrum nisi odio sit obcaecati dignissimos, incidunt enim provident, eveniet possimus molestias voluptas, aut magni. Hic asperiores, cum commodi, quae possimus repellat aliquam voluptatem quisquam, architecto labore odio consequatur.
+        Quidem accusantium libero et tempora vitae veniam odit culpa. Impedit et, culpa veniam qui quia dolore laudantium nemo soluta ab odio repellat voluptatem maiores vel recusandae explicabo, dolorum, velit cum?
+        Dolorem, cumque natus veritatis maxime laboriosam quasi vel eius iste explicabo fugit dignissimos reprehenderit quis quos eveniet commodi numquam aut excepturi debitis aperiam obcaecati. Delectus, atque. Odio provident eos qui!</p>
+
+        <h2 id="paquetes">Paquetes</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut, placeat accusantium corrupti laboriosam, minus maiores neque cupiditate laudantium tenetur iusto beatae inventore provident nesciunt sint debitis id? Quisquam, laboriosam.
+        Quia maxime maiores sequi similique ea molestiae dolorum consectetur iure recusandae animi natus a culpa libero, nisi aut veritatis ex odit aperiam harum beatae sed neque facilis corrupti? Hic, vel.
+        Molestias nisi dignissimos reprehenderit modi et eos nobis neque ex? Dolores qui sapiente quasi libero a. Voluptate natus ex amet saepe est quibusdam maiores, obcaecati ipsum facilis dolorum deleniti? Vel.
+        Similique, totam quasi. Atque ipsam voluptatum ea tempora assumenda explicabo eius, optio voluptate possimus aperiam et, perspiciatis incidunt ex eaque corporis dolorum nobis fugiat eos! Dolorem cupiditate illo omnis veniam.
+        Molestias repudiandae aliquid, nam expedita alias cum nemo nihil maiores magnam, soluta iusto! Fugiat non libero eveniet expedita dignissimos nulla temporibus nesciunt nihil possimus placeat. Possimus obcaecati quam consectetur assumenda!
+        Officiis quaerat cupiditate, asperiores officia quas saepe ab dolor autem, rem aliquam aperiam natus! Expedita ea magni vitae. Recusandae, magni architecto! Sint consectetur praesentium quis, nesciunt voluptatibus recusandae id atque.
+        Esse, sequi iure perferendis accusamus ipsum eius dolores odit voluptates veniam vel assumenda dicta quas earum atque pariatur quos id, natus tempore sunt animi ullam. Beatae illum ut recusandae id?
+        Placeat nostrum nisi odio sit obcaecati dignissimos, incidunt enim provident, eveniet possimus molestias voluptas, aut magni. Hic asperiores, cum commodi, quae possimus repellat aliquam voluptatem quisquam, architecto labore odio consequatur.
+        Quidem accusantium libero et tempora vitae veniam odit culpa. Impedit et, culpa veniam qui quia dolore laudantium nemo soluta ab odio repellat voluptatem maiores vel recusandae explicabo, dolorum, velit cum?
+        Dolorem, cumque natus veritatis maxime laboriosam quasi vel eius iste explicabo fugit dignissimos reprehenderit quis quos eveniet commodi numquam aut excepturi debitis aperiam obcaecati. Delectus, atque. Odio provident eos qui!</p>
+
+        <h2 id="alojamiento">Alojamiento</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut, placeat accusantium corrupti laboriosam, minus maiores neque cupiditate laudantium tenetur iusto beatae inventore provident nesciunt sint debitis id? Quisquam, laboriosam.
+        Quia maxime maiores sequi similique ea molestiae dolorum consectetur iure recusandae animi natus a culpa libero, nisi aut veritatis ex odit aperiam harum beatae sed neque facilis corrupti? Hic, vel.
+        Molestias nisi dignissimos reprehenderit modi et eos nobis neque ex? Dolores qui sapiente quasi libero a. Voluptate natus ex amet saepe est quibusdam maiores, obcaecati ipsum facilis dolorum deleniti? Vel.
+        Similique, totam quasi. Atque ipsam voluptatum ea tempora assumenda explicabo eius, optio voluptate possimus aperiam et, perspiciatis incidunt ex eaque corporis dolorum nobis fugiat eos! Dolorem cupiditate illo omnis veniam.
+        Molestias repudiandae aliquid, nam expedita alias cum nemo nihil maiores magnam, soluta iusto! Fugiat non libero eveniet expedita dignissimos nulla temporibus nesciunt nihil possimus placeat. Possimus obcaecati quam consectetur assumenda!
+        Officiis quaerat cupiditate, asperiores officia quas saepe ab dolor autem, rem aliquam aperiam natus! Expedita ea magni vitae. Recusandae, magni architecto! Sint consectetur praesentium quis, nesciunt voluptatibus recusandae id atque.
+        Esse, sequi iure perferendis accusamus ipsum eius dolores odit voluptates veniam vel assumenda dicta quas earum atque pariatur quos id, natus tempore sunt animi ullam. Beatae illum ut recusandae id?
+        Placeat nostrum nisi odio sit obcaecati dignissimos, incidunt enim provident, eveniet possimus molestias voluptas, aut magni. Hic asperiores, cum commodi, quae possimus repellat aliquam voluptatem quisquam, architecto labore odio consequatur.
+        Quidem accusantium libero et tempora vitae veniam odit culpa. Impedit et, culpa veniam qui quia dolore laudantium nemo soluta ab odio repellat voluptatem maiores vel recusandae explicabo, dolorum, velit cum?
+        Dolorem, cumque natus veritatis maxime laboriosam quasi vel eius iste explicabo fugit dignissimos reprehenderit quis quos eveniet commodi numquam aut excepturi debitis aperiam obcaecati. Delectus, atque. Odio provident eos qui!</p>
+
+        <h2 id="actividades">Actividades</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut, placeat accusantium corrupti laboriosam, minus maiores neque cupiditate laudantium tenetur iusto beatae inventore provident nesciunt sint debitis id? Quisquam, laboriosam.
+        Quia maxime maiores sequi similique ea molestiae dolorum consectetur iure recusandae animi natus a culpa libero, nisi aut veritatis ex odit aperiam harum beatae sed neque facilis corrupti? Hic, vel.
+        Molestias nisi dignissimos reprehenderit modi et eos nobis neque ex? Dolores qui sapiente quasi libero a. Voluptate natus ex amet saepe est quibusdam maiores, obcaecati ipsum facilis dolorum deleniti? Vel.
+        Similique, totam quasi. Atque ipsam voluptatum ea tempora assumenda explicabo eius, optio voluptate possimus aperiam et, perspiciatis incidunt ex eaque corporis dolorum nobis fugiat eos! Dolorem cupiditate illo omnis veniam.
+        Molestias repudiandae aliquid, nam expedita alias cum nemo nihil maiores magnam, soluta iusto! Fugiat non libero eveniet expedita dignissimos nulla temporibus nesciunt nihil possimus placeat. Possimus obcaecati quam consectetur assumenda!
+        Officiis quaerat cupiditate, asperiores officia quas saepe ab dolor autem, rem aliquam aperiam natus! Expedita ea magni vitae. Recusandae, magni architecto! Sint consectetur praesentium quis, nesciunt voluptatibus recusandae id atque.
+        Esse, sequi iure perferendis accusamus ipsum eius dolores odit voluptates veniam vel assumenda dicta quas earum atque pariatur quos id, natus tempore sunt animi ullam. Beatae illum ut recusandae id?
+        Placeat nostrum nisi odio sit obcaecati dignissimos, incidunt enim provident, eveniet possimus molestias voluptas, aut magni. Hic asperiores, cum commodi, quae possimus repellat aliquam voluptatem quisquam, architecto labore odio consequatur.
+        Quidem accusantium libero et tempora vitae veniam odit culpa. Impedit et, culpa veniam qui quia dolore laudantium nemo soluta ab odio repellat voluptatem maiores vel recusandae explicabo, dolorum, velit cum?
+        Dolorem, cumque natus veritatis maxime laboriosam quasi vel eius iste explicabo fugit dignissimos reprehenderit quis quos eveniet commodi numquam aut excepturi debitis aperiam obcaecati. Delectus, atque. Odio provident eos qui!</p>
+
+        <h2 id="traslados">Traslados</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut, placeat accusantium corrupti laboriosam, minus maiores neque cupiditate laudantium tenetur iusto beatae inventore provident nesciunt sint debitis id? Quisquam, laboriosam.
+        Quia maxime maiores sequi similique ea molestiae dolorum consectetur iure recusandae animi natus a culpa libero, nisi aut veritatis ex odit aperiam harum beatae sed neque facilis corrupti? Hic, vel.
+        Molestias nisi dignissimos reprehenderit modi et eos nobis neque ex? Dolores qui sapiente quasi libero a. Voluptate natus ex amet saepe est quibusdam maiores, obcaecati ipsum facilis dolorum deleniti? Vel.
+        Similique, totam quasi. Atque ipsam voluptatum ea tempora assumenda explicabo eius, optio voluptate possimus aperiam et, perspiciatis incidunt ex eaque corporis dolorum nobis fugiat eos! Dolorem cupiditate illo omnis veniam.
+        Molestias repudiandae aliquid, nam expedita alias cum nemo nihil maiores magnam, soluta iusto! Fugiat non libero eveniet expedita dignissimos nulla temporibus nesciunt nihil possimus placeat. Possimus obcaecati quam consectetur assumenda!
+        Officiis quaerat cupiditate, asperiores officia quas saepe ab dolor autem, rem aliquam aperiam natus! Expedita ea magni vitae. Recusandae, magni architecto! Sint consectetur praesentium quis, nesciunt voluptatibus recusandae id atque.
+        Esse, sequi iure perferendis accusamus ipsum eius dolores odit voluptates veniam vel assumenda dicta quas earum atque pariatur quos id, natus tempore sunt animi ullam. Beatae illum ut recusandae id?
+        Placeat nostrum nisi odio sit obcaecati dignissimos, incidunt enim provident, eveniet possimus molestias voluptas, aut magni. Hic asperiores, cum commodi, quae possimus repellat aliquam voluptatem quisquam, architecto labore odio consequatur.
+        Quidem accusantium libero et tempora vitae veniam odit culpa. Impedit et, culpa veniam qui quia dolore laudantium nemo soluta ab odio repellat voluptatem maiores vel recusandae explicabo, dolorum, velit cum?
+        Dolorem, cumque natus veritatis maxime laboriosam quasi vel eius iste explicabo fugit dignissimos reprehenderit quis quos eveniet commodi numquam aut excepturi debitis aperiam obcaecati. Delectus, atque. Odio provident eos qui!</p>
+
+    </section>
+
+
+            <!-- ENLACE AL JQUERY PARA LA FUNCIONALIDA DE BOTÓN MENÚ -->
+    <script src="query.js"></script>
+</body>
+</html>
